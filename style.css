@@ -12,3 +12,23 @@ background-color: blue;
 #button4 {
 background-color: yellow;
 }
+
+
+
+
+
+#button1:active {
+    background-color: pink;
+}
+
+#button2:active {
+    background-color: #7FFFD4;
+    }
+    
+    #button3:active {
+    background-color: #00FFFF;
+    }
+    
+    #button4:active {
+    background-color: #FF8C00;
+    }
