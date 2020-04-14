@@ -14,7 +14,7 @@ function playBackComputerPatternArray (x) {
     for(i =0; i <= computerPatternArray.length; i++){
         const number = (computerPatternArray[i] -1)
         if (number === 1){
-            
+            document.getElementById('button1').backgroundcolor
         }
     }
 }
@@ -73,5 +73,15 @@ button3.addEventListener('click', function () {
 button4.addEventListener('click', function () {
     console.log('button4 is pressed')
     userButtonArray.push(4)
+    document.getElementById('button4').style.color = 'red'
+    document.getElementById('button4').style.color = 'black'
 
 })
+
+
+
+function yell() {
+    setInterval (function(){ 
+        console.log('FUCKING');
+}, 1000);
+}
