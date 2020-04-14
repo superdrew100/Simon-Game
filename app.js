@@ -8,6 +8,16 @@ const startButton = document.getElementById('startButton')
 const userButtonArray = []
 const computerPatternArray = []
 
+
+
+function playBackComputerPatternArray (x) {
+    for(i =0; i <= computerPatternArray.length; i++){
+        const number = (computerPatternArray[i] -1)
+        if (number === 1){
+            
+        }
+    }
+}
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
