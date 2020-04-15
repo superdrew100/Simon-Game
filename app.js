@@ -20,6 +20,7 @@ function playBackComputerPatternArray() {
                 if (sound) {
                     let audio = document.getElementById("clip1")
                     audio.play()
+                    //timed animation
                   }
             }
             if (number === 2){
