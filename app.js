@@ -74,7 +74,7 @@ document.addEventListener('click', function() {
     }
 
 })
-//Flash functions----------------------------------------------------------
+//Flash functions-----------------------------------------------------------
 function one() {
 if (sound) {
     let audio = document.getElementById("clip1")
