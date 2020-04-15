@@ -66,8 +66,8 @@ document.addEventListener('click', function() {
         }
         if (JSON.stringify(userButtonArray) !== JSON.stringify(computerPatternArray)) {
             console.log("Both strings do not match")
-            const userButtonArray = []
-            const computerPatternArray = []
+            userButtonArray = []
+            computerPatternArray = []
         }
     }
 
