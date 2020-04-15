@@ -1,3 +1,4 @@
+//timed animations should mkae it so that a repeating function should be timed, 
 console.log("app.js is linked")
 const button1 = document.getElementById('button1')
 const button2 = document.getElementById('button2')
@@ -8,7 +9,6 @@ sound = true
 
 const userButtonArray = []
 const computerPatternArray = []
-
 
 
 function playBackComputerPatternArray() {
