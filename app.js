@@ -4,26 +4,55 @@ const button2 = document.getElementById('button2')
 const button3 = document.getElementById('button3')
 const button4 = document.getElementById('button4')
 const startButton = document.getElementById('startButton')
+sound = true
 
 const userButtonArray = []
 const computerPatternArray = []
 
 
 
-function playBackComputerPatternArray (x) {
-    for(i =0; i <= computerPatternArray.length; i++){
-        const number = (computerPatternArray[i] -1)
-        if (number === 1){
-            document.getElementById('button1').backgroundcolor
+function playBackComputerPatternArray() {
+    setInterval (function(){ 
+        for(i =0; i <= computerPatternArray.length; i++){
+            const number = (computerPatternArray[i-1])
+            console.log(i)
+            if (number === 1){ 
+                console.log('1 flash')
+                if (sound) {
+                    let audio = document.getElementById("clip1")
+                    audio.play()
+                  }
+            }
+            if (number === 2){
+                console.log('2 flash')
+                if (sound) {
+                    let audio = document.getElementById("clip2")
+                    audio.play()
+                  }
+            }
+            if (number === 3){
+                console.log('3 flash')
+                if (sound) {
+                    let audio = document.getElementById("clip3")
+                    audio.play()
+                  }
+            }
+            if (number === 4){
+                console.log('4 flash')
+                if (sound) {
+                    let audio = document.getElementById("clip4")
+                    audio.play()
+                  }
+            }
         }
-    }
+}, 10000)
 }
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
   }
-
 
 document.addEventListener('click', function() {
     //console.log("game has started")
@@ -39,8 +68,17 @@ document.addEventListener('click', function() {
     }
 
 })
-
-
+//Flash functions----------------------------------------------
+function one() {
+if (sound) {
+    let audio = document.getElementById("clip1")
+    audio.play()
+  }
+  if(document.getElementById("clip1").currentTime > 0){
+  button1.style.backgroundColor = "lightgreen"}
+  else{button1.style.backgroundColor = "red"
+  }
+}
 
 //Buttons-----------------------------------------------------------
 
@@ -77,11 +115,3 @@ button4.addEventListener('click', function () {
     document.getElementById('button4').style.color = 'black'
 
 })
-
-
-
-function yell() {
-    setInterval (function(){ 
-        console.log('FUCKING');
-}, 1000);
-}
