@@ -61,9 +61,13 @@ document.addEventListener('click', function() {
     if (userButtonArray.length === computerPatternArray.length) {
         if (JSON.stringify(userButtonArray) === JSON.stringify(computerPatternArray)) {
             console.log("Both strings match!")
+            computerPatternArray.push(getRandomInt(1, 5))
+            playBackComputerPatternArray()
         }
         if (JSON.stringify(userButtonArray) !== JSON.stringify(computerPatternArray)) {
             console.log("Both strings do not match")
+            const userButtonArray = []
+            const computerPatternArray = []
         }
     }
 
@@ -85,6 +89,7 @@ if (sound) {
 startButton.addEventListener('click', function(){
     console.log("game has started")
     computerPatternArray.push(getRandomInt(1, 5))
+    playBackComputerPatternArray()
 
  
 })
@@ -111,7 +116,5 @@ button3.addEventListener('click', function () {
 button4.addEventListener('click', function () {
     console.log('button4 is pressed')
     userButtonArray.push(4)
-    document.getElementById('button4').style.color = 'red'
-    document.getElementById('button4').style.color = 'black'
 
 })
