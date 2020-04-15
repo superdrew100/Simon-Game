@@ -44,6 +44,7 @@ function playBackComputerPatternArray() {
                 if (sound) {
                     let audio = document.getElementById("clip4")
                     audio.play()
+                    //timed animation
                   }
             }
         }
