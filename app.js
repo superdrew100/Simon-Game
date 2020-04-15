@@ -74,7 +74,7 @@ document.addEventListener('click', function() {
     }
 
 })
-//Flash functions-----------------------------------------------------------
+//Flash functions------------------------------------------------------------
 function one() {
 if (sound) {
     let audio = document.getElementById("clip1")
@@ -86,7 +86,7 @@ if (sound) {
   }
 }
 
-//Buttons--------------------------------------------------------------------
+//Buttons-------------------------------------------------------------------
 
 startButton.addEventListener('click', function(){
     console.log("game has started")
