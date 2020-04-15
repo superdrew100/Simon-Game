@@ -12,7 +12,6 @@ const computerPatternArray = []
 
 
 function playBackComputerPatternArray() {
-    setInterval (function(){ 
         for(i =0; i <= computerPatternArray.length; i++){
             const number = (computerPatternArray[i-1])
             console.log(i)
@@ -45,7 +44,6 @@ function playBackComputerPatternArray() {
                   }
             }
         }
-}, 10000)
 }
 
 function getRandomInt(min, max) {
