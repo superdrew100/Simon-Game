@@ -86,7 +86,7 @@ if (sound) {
   }
 }
 
-//Buttons------------------------------------------------------------------
+//Buttons-------------------------------------------------------------------
 
 startButton.addEventListener('click', function(){
     console.log("game has started")
