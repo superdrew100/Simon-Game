@@ -27,6 +27,7 @@ function playBackComputerPatternArray() {
                 if (sound) {
                     let audio = document.getElementById("clip2")
                     audio.play()
+                    //timed animation
                   }
             }
             if (number === 3){
@@ -34,6 +35,7 @@ function playBackComputerPatternArray() {
                 if (sound) {
                     let audio = document.getElementById("clip3")
                     audio.play()
+                    //timed animation
                   }
             }
             if (number === 4){
